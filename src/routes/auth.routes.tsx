@@ -6,15 +6,15 @@ import { SignIn } from '../pages/SignIn';
 
 const { Navigator, Screen } = createStackNavigator();
 
-function AuthRoutes() {
+export function AuthRoutes() {
     return(
         <Navigator>
             <Screen 
-            name="Sign"
-            component={Home}/>
-            <Screen 
             name="Home"
             component={Home}/>
+            <Screen 
+            name="SignIn"
+            component={SignIn}/>
             
         </Navigator>
     )
